@@ -1,0 +1,23 @@
+name: Assembly CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install NASM and binutils
+        run: sudo apt-get update && sudo apt-get install -y nasm binutils gcc
+
+      - name: Build all chapters
+        run: make all
+
+      - name: Verify ch01_hello_world runs
+        run: ./prog/ch01_hello_world

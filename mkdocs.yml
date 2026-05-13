@@ -1,0 +1,105 @@
+site_name: Tutoriel Assembleur x86-64
+site_description: "Un tutoriel complet d'assembleur x86-64 avec 19 chapitres répartis sur 3 niveaux et un projet capstone"
+site_author: Clifford
+copyright: "MIT License"
+repo_url: https://github.com/claserre9/assembly-tutorial
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Passer en mode sombre
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Passer en mode clair
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Accueil: README.md
+  - Cours:
+    - "01 — Introduction": cours/01_introduction/README.md
+    - "02 — Registres": cours/02_registres/README.md
+    - "03 — Constantes et données": cours/03_constantes_donnees/README.md
+    - "04 — Arithmétique": cours/04_arithmetique/README.md
+    - "05 — Entrées/Sorties": cours/05_entrees_sorties/README.md
+    - "06 — Conditions et sauts": cours/06_conditions_sauts/README.md
+    - "07 — Boucles": cours/07_boucles/README.md
+    - "08 — Procédures": cours/08_procedures/README.md
+    - "09 — Tableaux": cours/09_tableaux/README.md
+    - "10 — Chaînes": cours/10_chaines/README.md
+    - "11 — Modes d'adressage": cours/11_modes_adressage/README.md
+    - "12 — Pile": cours/12_pile/README.md
+    - "13 — Fichiers": cours/13_fichiers/README.md
+    - "14 — Macros": cours/14_macros/README.md
+    - "15 — Virgule flottante": cours/15_virgule_flottante/README.md
+    - "16 — Structures": cours/16_structures/README.md
+    - "17 — Listes chaînées": cours/17_listes_chainees/README.md
+    - "18 — SIMD": cours/18_simd/README.md
+    - "19 — Multi-fichiers": cours/19_multifichiers/README.md
+  - Exercices:
+    - "01 — Introduction": exercices/01_introduction/README.md
+    - "02 — Registres": exercices/02_registres/README.md
+    - "03 — Constantes et données": exercices/03_constantes_donnees/README.md
+    - "04 — Arithmétique": exercices/04_arithmetique/README.md
+    - "05 — Entrées/Sorties": exercices/05_entrees_sorties/README.md
+    - "06 — Conditions et sauts": exercices/06_conditions_sauts/README.md
+    - "07 — Boucles": exercices/07_boucles/README.md
+    - "08 — Procédures": exercices/08_procedures/README.md
+    - "09 — Tableaux": exercices/09_tableaux/README.md
+    - "10 — Chaînes": exercices/10_chaines/README.md
+    - "11 — Modes d'adressage": exercices/11_modes_adressage/README.md
+    - "12 — Pile": exercices/12_pile/README.md
+    - "13 — Fichiers": exercices/13_fichiers/README.md
+    - "14 — Macros": exercices/14_macros/README.md
+    - "15 — Virgule flottante": exercices/15_virgule_flottante/README.md
+    - "16 — Structures": exercices/16_structures/README.md
+    - "17 — Listes chaînées": exercices/17_listes_chainees/README.md
+    - "18 — SIMD": exercices/18_simd/README.md
+    - "19 — Multi-fichiers": exercices/19_multifichiers/README.md
+  - Solutions:
+    - "01 — Introduction": solutions/01_introduction/README.md
+    - "02 — Registres": solutions/02_registres/README.md
+    - "03 — Constantes et données": solutions/03_constantes_donnees/README.md
+    - "04 — Arithmétique": solutions/04_arithmetique/README.md
+    - "05 — Entrées/Sorties": solutions/05_entrees_sorties/README.md
+    - "06 — Conditions et sauts": solutions/06_conditions_sauts/README.md
+    - "07 — Boucles": solutions/07_boucles/README.md
+    - "08 — Procédures": solutions/08_procedures/README.md
+    - "09 — Tableaux": solutions/09_tableaux/README.md
+    - "10 — Chaînes": solutions/10_chaines/README.md
+    - "11 — Modes d'adressage": solutions/11_modes_adressage/README.md
+    - "12 — Pile": solutions/12_pile/README.md
+    - "13 — Fichiers": solutions/13_fichiers/README.md
+    - "14 — Macros": solutions/14_macros/README.md
+    - "15 — Virgule flottante": solutions/15_virgule_flottante/README.md
+    - "16 — Structures": solutions/16_structures/README.md
+    - "17 — Listes chaînées": solutions/17_listes_chainees/README.md
+    - "18 — SIMD": solutions/18_simd/README.md
+    - "19 — Multi-fichiers": solutions/19_multifichiers/README.md
+  - Annexes:
+    - "A — Registres x86-64": annexes/A_registres.md
+    - "B — Débogage avec GDB": annexes/B_debogage.md
+    - "C — Assemblage et liaison": annexes/C_assemblage_liaison.md
+    - "D — Bonnes pratiques": annexes/D_bonnes_pratiques.md
+
+docs_dir: docs

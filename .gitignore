@@ -1,0 +1,22 @@
+# Binaires compilés
+prog/
+
+# Fichiers objets
+*.o
+*.a
+*.so
+
+# Fichiers temporaires NASM
+*.lst
+
+# IDE
+.idea/
+.vscode/
+
+# MkDocs
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
